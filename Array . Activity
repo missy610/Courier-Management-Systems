@@ -1,0 +1,28 @@
+using System;
+
+namespace CSharp_Shell
+{
+
+    public class Array 
+    {
+    	
+        static void Main(string[] arg)
+        {
+        	var customersname = new[] {"Edgardo M. Ramos", "Merlyn Joyce B. Garcia", "Lester S. Salvador", "John Bryan T. Garcia" };
+        	
+        	for (int i = 0; i < customersname.Length; i++)
+        	{ 
+        		customersname[i] = customersname[i].ToUpper();
+        	}
+        	
+        	
+        	
+        	
+        	
+        	foreach (var name in customersname)
+        	{
+        		Console.WriteLine($"The customers name is {name}");
+        	}
+        }
+    }
+}
